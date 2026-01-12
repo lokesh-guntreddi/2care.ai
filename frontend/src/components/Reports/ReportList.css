@@ -1,0 +1,125 @@
+.report-list-container {
+    animation: fadeIn 0.4s ease-out;
+}
+
+.report-list-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.report-list-header h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.report-list-header p {
+    color: var(--text-secondary);
+}
+
+.filters-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.report-card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-md);
+}
+
+.report-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-md);
+    gap: var(--spacing-sm);
+}
+
+.report-card-header h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.3;
+    flex: 1;
+}
+
+.report-type-badge {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.report-card-body {
+    flex: 1;
+    margin-bottom: var(--spacing-md);
+}
+
+.report-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.info-item {
+    display: flex;
+    gap: var(--spacing-xs);
+    font-size: 0.9rem;
+}
+
+.info-label {
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.report-notes {
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--border-color);
+}
+
+.report-notes p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-top: var(--spacing-xs);
+}
+
+.report-card-actions {
+    display: flex;
+    gap: var(--spacing-xs);
+}
+
+.report-card-actions .btn {
+    flex: 1;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: var(--spacing-xl);
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .filters-card {
+        grid-template-columns: 1fr;
+    }
+
+    .reports-grid {
+        grid-template-columns: 1fr;
+    }
+}
